@@ -61,17 +61,6 @@ export default defineType({
       group: "content",
     }),
     defineField({
-      name: "authors",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: [{ type: "blog.author" }],
-        },
-      ],
-      group: "content",
-    }),
-    defineField({
       name: "publishDate",
       type: "date",
       //   validation: (Rule) => Rule.required(),

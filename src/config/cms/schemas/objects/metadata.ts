@@ -1,6 +1,4 @@
 import { defineField, defineType } from "sanity";
-import { TextSeo } from "../../components/seo/TextInputSeo";
-import { InputSeo } from "../../components/seo/InputSeo";
 
 export default defineType({
   name: "metadata",
@@ -20,9 +18,6 @@ export default defineType({
       description:
         "Optymalizujesz swoją stronę internetową, aby przyciągnąć więcej klientów poprzez media społecznościowe i wyszukiwarkę Google. Chcesz, aby Twoje wpisy były atrakcyjne i zachęcały użytkowników do kliknięcia. Najlepiej, gdy opis ma między 15 a 60 znaków.",
       validation: (Rule) => Rule.max(60).warning(),
-      components: {
-        input: InputSeo,
-      },
       options: {
         max: 60,
       } as any,
@@ -33,9 +28,6 @@ export default defineType({
       description:
         "Opis strony internetowej, który pojawia się w wynikach wyszukiwania Google. Opis powinien zawierać między 50 a 160 znaków.",
       type: "text",
-      components: {
-        input: TextSeo,
-      },
       options: {
         max: 160,
       } as any,

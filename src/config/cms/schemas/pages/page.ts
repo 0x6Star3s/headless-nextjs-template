@@ -34,19 +34,21 @@ export default defineConfig({
   fields: [
     defineField({
       name: "title",
-      title: "Tytuł strony",
+      title: "Title strony",
       description:
-        "Wpisz tytuł swojej strony, a następnie stworzę dla niej adres URL, który będzie łatwy do znalezienia w internecie.",
+        "Read title yours site, a next create for your address URL, which will be easy to find in internet.",
       type: "string",
       group: "seo",
       // validation: (rule) => rule.required(),
     }),
     defineField({
       name: "slug",
-      title: "Adres strony internetowej",
+      title: "Website address",
+      description:
+        "The address of the page on the website, which will be easy to find in the internet.",
       type: "slug",
       options: {
-        source: (doc: any) => `${doc.language}/${doc.title}`,
+        source: (doc: any) => `${doc.title}`,
         maxLength: 200, // will be ignored if slugify is set
         slugify: (input) => slugGeneration(input),
       },
@@ -56,7 +58,7 @@ export default defineConfig({
     defineField({
       name: "modules",
       type: "array",
-      title: "Content | Treść strony",
+      title: "Content",
       of: modules.map((section) => ({
         type: section.type.name,
       })),
@@ -102,11 +104,11 @@ export default defineConfig({
       title: "title",
       slug: "slug.current",
     },
-    prepare(selection: { title: string; slug: string;}) {
+    prepare(selection: { title: string; slug: string }) {
       const { title, slug } = selection;
-      const subtitleCurrent = slug === "index" ? `/` : `${slug}`;
+      const subtitleCurrent = slug === "index" ? `/` : `/${slug}`;
       return {
-        title: title,
+        title: title || "Page",
         subtitle: subtitleCurrent,
       };
     },

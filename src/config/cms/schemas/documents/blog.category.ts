@@ -15,12 +15,10 @@ export default defineType({
   preview: {
     select: {
       title: "title",
-	  language: "language"
     },
-    prepare({ title, language }) {
+    prepare({ title }) {
       return {
         title: title || "Untitled",
-		subtitle: language,
       };
     },
   },

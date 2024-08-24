@@ -4,7 +4,7 @@ import accordionList from "./modules/block/accordion-list";
 import blogList from "./modules/block/blog-list";
 import breadcrumbs from "./modules/block/breadcrumbs";
 import callout from "./modules/block/callout";
-import customHtml from "./modules/block/custom-html";
+import customCode from "./modules/block/custom-code";
 import flagList from "./modules/block/flag-list";
 import heroSaas from "./modules/block/hero.saas";
 import heroSplit from "./modules/block/hero.split";
@@ -13,7 +13,6 @@ import richtextModule from "./modules/block/richtext-module";
 import statList from "./modules/block/stat-list";
 import testimonialList from "./modules/block/testimonial-list";
 import testimonialFeatured from "./modules/block/testimonial.featured";
-import { group } from "console";
 
 const list = [
   // modules
@@ -43,9 +42,9 @@ const list = [
     type: callout,
   },
   {
-    name: "customHtml",
+    name: "customCode",
     group: "modules",
-    type: customHtml,
+    type: customCode,
   },
   {
     name: "flagList",

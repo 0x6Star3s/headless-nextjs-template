@@ -2,8 +2,8 @@ import { defineField, defineType } from "sanity";
 import { VscCode } from "react-icons/vsc";
 
 export default defineType({
-  name: "custom-html",
-  title: "Custom HTML",
+  name: "custom-code",
+  title: "Custom Code",
   icon: VscCode,
   type: "object",
   groups: [{ name: "options", title: "Options" }],
@@ -14,7 +14,10 @@ export default defineType({
       type: "code",
       options: {
         language: "html",
-        languageAlternatives: [{ title: "HTML", value: "html" }],
+        languageAlternatives: [
+          { title: "HTML", value: "html" },
+          { title: "Javascript", value: "javascript" },
+        ],
       },
     }),
     defineField({

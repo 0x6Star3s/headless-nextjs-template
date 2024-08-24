@@ -41,7 +41,7 @@ export default defineType({
                 creativeIcon,
                 creativeImage,
                 creativeRichtext,
-                { type: "custom-html" },
+                { type: "custom-code" },
               ],
             }),
             defineField({

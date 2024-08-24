@@ -15,11 +15,6 @@ export default defineType({
   ],
   fields: [
     defineField({
-      name: "language",
-      type: "string",
-      readOnly: true,
-    }),
-    defineField({
       name: "title",
       type: "string",
       validation: (Rule) => Rule.required(),
@@ -28,10 +23,8 @@ export default defineType({
     defineField({
       name: "slug",
       title: "Slug",
+      description:"Generated slug tu be used in the URL",
       type: "slug",
-      components: {
-        input: InputSlug,
-      },
       options: {
         maxLength: 96,
         source: (doc: any) => `${doc.language}/blog/${doc.title}`,
@@ -47,12 +40,12 @@ export default defineType({
       of: [
         { type: "block" },
         imageBlock,
-		// {type: "array",}
+        // {type: "array",}
         defineArrayMember({
-        	type: 'code',
-        	options: {
-        		withFilename: true,
-        	},
+          type: "code",
+          options: {
+            withFilename: true,
+          },
         }),
       ],
       group: "content",
@@ -82,7 +75,7 @@ export default defineType({
     defineField({
       name: "publishDate",
       type: "date",
-    //   validation: (Rule) => Rule.required(),
+      //   validation: (Rule) => Rule.required(),
       initialValue: () => new Date().toISOString(),
       group: "content",
     }),

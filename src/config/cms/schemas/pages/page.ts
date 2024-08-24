@@ -36,10 +36,10 @@ export default defineConfig({
       name: "title",
       title: "Title strony",
       description:
-        "Read title yours site, a next create for your address URL, which will be easy to find in internet.",
+        "Read title yours site, a next create for your address URL, which will be easy to find in internet. if you wont main page write (index)",
       type: "string",
       group: "seo",
-      // validation: (rule) => rule.required(),
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: "slug",

@@ -13,6 +13,7 @@ import {
 import { visionTool } from '@sanity/vision'
 import { codeInput } from '@sanity/code-input'
 import { schemaTypes } from './cms/schemas'
+import {colorInput} from '@sanity/color-input'
 
 const singletonTypes = ['site']
 
@@ -44,6 +45,7 @@ export default defineConfig({
 		}),
 		visionTool({ title: 'GROQ' }),
 		codeInput(),
+    colorInput(),
 	],
 
 	scheduledPublishing: {

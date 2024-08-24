@@ -8,11 +8,6 @@ export default defineType({
   icon: VscTag,
   fields: [
     defineField({
-      name: "language",
-      type: "string",
-      readOnly: true,
-    }),
-    defineField({
       name: "title",
       type: "string",
     }),

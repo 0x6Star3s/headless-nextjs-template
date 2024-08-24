@@ -12,12 +12,6 @@ export default defineType({
   ],
   fields: [
     defineField({
-      name: "language",
-      type: "string",
-	  group: "general",
-      readOnly: true,
-    }),
-    defineField({
     	name: 'logo',
     	type: 'logo',
     	options: {

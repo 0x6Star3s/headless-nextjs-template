@@ -9,11 +9,6 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
-      name: "language",
-      type: "string",
-      readOnly: true,
-    }),
-    defineField({
       name: "title",
       type: "string",
       validation: (Rule) => Rule.required(),
@@ -28,11 +23,10 @@ export default defineType({
     select: {
       title: "title",
       items: "items",
-      language: "language",
     },
-    prepare: ({ title, items, language }) => ({
+    prepare: ({ title, items }) => ({
       title,
-      subtitle: `${language}, (${count(items)})`,
+      subtitle: `links (${count(items)})`,
     }),
   },
 });

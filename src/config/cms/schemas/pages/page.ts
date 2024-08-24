@@ -34,7 +34,7 @@ export default defineConfig({
   fields: [
     defineField({
       name: "title",
-      title: "Title strony",
+      title: "Title site",
       description:
         "Read title yours site, a next create for your address URL, which will be easy to find in internet. if you wont main page write (index)",
       type: "string",

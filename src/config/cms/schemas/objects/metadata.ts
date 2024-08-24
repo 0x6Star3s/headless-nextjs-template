@@ -13,10 +13,10 @@ export default defineType({
     }),
     defineField({
       name: "title",
-      title: "Tytuł dla SEO & social sharing",
+      title: "Title fro SEO & social sharing",
       type: "string",
       description:
-        "Optymalizujesz swoją stronę internetową, aby przyciągnąć więcej klientów poprzez media społecznościowe i wyszukiwarkę Google. Chcesz, aby Twoje wpisy były atrakcyjne i zachęcały użytkowników do kliknięcia. Najlepiej, gdy opis ma między 15 a 60 znaków.",
+        "You optimize your website to attract more customers through social media and Google search. You want your posts to be attractive and encourage users to click. It is best if the description is between 15 and 60 characters long.",
       validation: (Rule) => Rule.max(60).warning(),
       options: {
         max: 60,
@@ -24,9 +24,9 @@ export default defineType({
     }),
     defineField({
       name: "description",
-      title: "Opis dla SEO & social sharing",
+      title: "Description for SEO & social sharing",
       description:
-        "Opis strony internetowej, który pojawia się w wynikach wyszukiwania Google. Opis powinien zawierać między 50 a 160 znaków.",
+        "The description of a website that appears in Google search results. The description should contain between 50 and 160 characters.",
       type: "text",
       options: {
         max: 160,
@@ -35,9 +35,9 @@ export default defineType({
     }),
     defineField({
       name: "image",
-      title: "Zdięcie dla SEO & social sharing",
+      title: "Image for SEO & social sharing",
       description:
-        "Zdjęcie, które będzie wyświetlane, gdy Twój post zostanie udostępniony na Facebooku lub Twitterze.",
+        "The photo that will be displayed when your post is shared on Facebook or Twitter.",
       type: "image",
     }),
   ],

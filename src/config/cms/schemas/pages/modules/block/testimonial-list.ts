@@ -7,6 +7,7 @@ export default defineType({
   title: "Testimonial list",
   icon: GrBlockQuote,
   type: "object",
+  groups: [{ name: "options", title: "Options" }],
   fields: [
     defineField({
       name: "intro",
@@ -19,6 +20,12 @@ export default defineType({
       type: "string",
       // type: "array",
       // of: [{ type: "reference", to: [{ type: "testimonial" }] }],
+    }),
+    defineField({
+      name: "uid",
+      title: "Unique Identifier",
+      type: "uid",
+      group: "options",
     }),
   ],
   preview: {

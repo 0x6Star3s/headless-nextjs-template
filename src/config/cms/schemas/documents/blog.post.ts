@@ -1,7 +1,6 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { VscEdit } from "react-icons/vsc";
 import imageBlock from "../fragments/image-block";
-import InputSlug from "../../components/seo/InputSlug";
 import { slugGeneration } from "../../lib/slug";
 
 export default defineType({
@@ -27,7 +26,7 @@ export default defineType({
       type: "slug",
       options: {
         maxLength: 96,
-        source: (doc: any) => `${doc.language}/blog/${doc.title}`,
+        source: (doc: any) => `/blog/${doc.title}`,
         isUnique: (value, context) => context.defaultIsUnique(value, context),
         slugify: (input) => slugGeneration(input),
       },

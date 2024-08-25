@@ -20,6 +20,11 @@ export default defineType({
   fieldsets: [alignmentFieldset],
   fields: [
     defineField({
+      name: "pretitle",
+      type: "string",
+      group: "content",
+    }),
+    defineField({
       name: "intro",
       type: "array",
       of: [{ type: "block" }],
@@ -110,7 +115,12 @@ export default defineType({
         }),
       ],
     }),
-
+    defineField({
+      name: "fullscreen",
+      title: "Full Screen",
+      type: "boolean",
+      initialValue: false,
+    }),
     defineField({
       name: "uid",
       title: "Unique Identifier",

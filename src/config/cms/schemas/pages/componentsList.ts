@@ -17,6 +17,8 @@ import testimonialFeatured from "./modules/block/testimonial.featured";
 // development
 import heroDev from "./modules/development/hero.dev";
 import aboutDev from "./modules/development/about.dev";
+import galleryDev from "./modules/development/gallery.dev";
+import servicesDev from "./modules/development/services.dev";
 
 const list = [
   // modules
@@ -101,6 +103,16 @@ const list = [
     name: "aboutDev",
     group: "development",
     type: aboutDev,
+  },
+  {
+    name: "galleryDev",
+    group: "development",
+    type: galleryDev,
+  },
+  {
+    name: "servicesDev",
+    group: "development",
+    type: servicesDev,
   },
 ];
 

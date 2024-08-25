@@ -14,6 +14,10 @@ import statList from "./modules/block/stat-list";
 import testimonialList from "./modules/block/testimonial-list";
 import testimonialFeatured from "./modules/block/testimonial.featured";
 
+// development
+import heroDev from "./modules/development/hero.dev";
+import aboutDev from "./modules/development/about.dev";
+
 const list = [
   // modules
   {
@@ -85,6 +89,18 @@ const list = [
     name: "testimonialFeatured",
     group: "modules",
     type: testimonialFeatured,
+  },
+
+  // development
+  {
+    name: "heroDev",
+    group: "development",
+    type: heroDev,
+  },
+  {
+    name: "aboutDev",
+    group: "development",
+    type: aboutDev,
   },
 ];
 

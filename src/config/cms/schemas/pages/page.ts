@@ -75,9 +75,13 @@ export default defineConfig({
               ],
             },
             {
-              name: "upsell",
-              title: "Upsell",
-              of: ["blog-list", "breadcrumbs"],
+              name: "development",
+              title: "Development",
+              of: [
+                ...filterModules("development").map(
+                  (section) => section.type.name
+                ),
+              ],
             },
           ],
           views: [

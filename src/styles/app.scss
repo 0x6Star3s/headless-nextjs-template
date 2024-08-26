@@ -1,0 +1,51 @@
+@tailwind base;
+
+
+@import "./fonts.css";
+@import "./components.scss";
+@import "./utilities.scss";
+
+@layer base {
+  * {
+    min-width: 0;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  :target:is(h1, h2, h3, h4, h5, h6) {
+    scroll-margin-top: var(--header-height);
+    animation: target 2s ease-in-out forwards;
+  }
+
+  @keyframes target {
+    0%,
+    50% {
+      @apply bg-amber-400/50;
+    }
+  }
+
+  html {
+    accent-color: theme("colors.accent");
+    caret-color: theme("colors.accent");
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #11181c;
+    background: #f2f3f4;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+
+  ::-webkit-details-marker {
+    display: none;
+  }
+}

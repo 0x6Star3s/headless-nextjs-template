@@ -1,0 +1,36 @@
+/* ctas, links */
+
+._btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5em 1em;
+	text-align: center;
+	text-shadow: none;
+}
+
+.action {
+	@apply _btn frosted-glass text-balance rounded-lg border border-transparent bg-gradient-to-br from-accent/70 to-accent text-white  shadow-lg;
+}
+
+.action-outline {
+	@apply _btn text-balance rounded-lg border border-ink/10 bg-gradient-to-br from-canvas/70 to-canvas text-ink hover:border-accent/15;
+}
+
+.ghost {
+	@apply _btn frosted-glass rounded-lg hover:bg-ink/5 border-ink/10 border;
+}
+
+.link {
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration-thickness: 2px;
+	}
+}
+
+.is-external::after {
+	content: ' ↗';
+	font-size: 0.7em;
+	vertical-align: top;
+}

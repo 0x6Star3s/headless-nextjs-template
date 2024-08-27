@@ -28,12 +28,12 @@ export default defineType({
     }),
 
     defineField({
-      name: "imagesGroup",
+      name: "imagesGroupArray",
       title: "Images",
       type: "array",
       of: [
         defineField({
-          name: "imageType",
+          name: "imageObject",
           type: "object",
           fields: [
             defineField({

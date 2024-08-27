@@ -15,6 +15,10 @@ const config: Config = {
       maxHeight: {
         fold: "calc(100svh - var(--header-height))",
       },
+      backgroundImage: {
+        heroDevGradient:
+          "radial-gradient(48.79% 136.07% at 50.03% 48.54%,rgba(27, 34, 81, 0.568) 0, rgba(9, 19, 72, 0.677) 100%)",
+      },
     },
   },
   plugins: [

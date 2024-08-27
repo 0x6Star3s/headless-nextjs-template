@@ -1,6 +1,6 @@
-@tailwind components;
+@import "./button.scss";
+
 @layer components {
-  @import "./button.scss";
   /* typography */
 
   ._h {

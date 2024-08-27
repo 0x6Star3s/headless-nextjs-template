@@ -16,6 +16,10 @@ import StepList from "./default/StepList";
 import TestimonialList from "./default/TestimonialList";
 import TestimonialFeatured from "./default/TestimonialFeatured";
 
+// dev
+import HeroDev from "./dev/Hero.dev";
+
+
 export default function Modules({
   modules,
   page,
@@ -63,6 +67,10 @@ export default function Modules({
             return <TestimonialList {...module} key={module._key} />;
           case "testimonial.featured":
             return <TestimonialFeatured {...module} key={module._key} />;
+
+          // dev
+          case "hero.dev":
+            return <HeroDev {...module} key={module._key} />;
 
           default:
             return <div data-type={module._type} key={module._key} />;

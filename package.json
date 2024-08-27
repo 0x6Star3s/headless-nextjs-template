@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/to-html": "^2.0.13",
     "@sanity/code-input": "^4.1.4",
     "@sanity/color-input": "^3.1.1",
     "@sanity/dashboard": "^4.0.0",
@@ -16,6 +17,7 @@
     "@sanity/ui": "^2.8.8",
     "@sanity/vision": "^3.55.0",
     "clsx": "^2.1.1",
+    "feed": "^4.2.2",
     "next": "14.2.6",
     "next-sanity": "^9.4.7",
     "next-sanity-image": "^6.1.1",
@@ -25,7 +27,9 @@
     "sanity": "^3.55.0",
     "sanity-plugin-asset-source-unsplash": "^3.0.1",
     "sass": "^1.77.8",
-    "tailwind-merge": "^2.5.2"
+    "shiki": "^1.14.1",
+    "tailwind-merge": "^2.5.2",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -120,6 +120,7 @@ export default defineType({
       title: "Full Screen",
       type: "boolean",
       initialValue: false,
+      group: "options",
     }),
     defineField({
       name: "uid",

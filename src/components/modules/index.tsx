@@ -18,6 +18,7 @@ import TestimonialFeatured from "./default/TestimonialFeatured";
 
 // dev
 import HeroDev from "./dev/Hero.dev";
+import AboutDev from "./dev/About.dev";
 
 
 export default function Modules({
@@ -71,6 +72,8 @@ export default function Modules({
           // dev
           case "hero.dev":
             return <HeroDev {...module} key={module._key} />;
+          case "about.dev":
+            return <AboutDev {...module} key={module._key} />;
 
           default:
             return <div data-type={module._type} key={module._key} />;

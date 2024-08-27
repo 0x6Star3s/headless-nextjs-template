@@ -42,13 +42,12 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-br from-accent/5 to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-ink to-ink/70 bg-clip-text text-transparent;
   }
 
   /* layout */
 
   .section {
-    // @apply mx-auto max-w-screen-xl p-8 max-md:px-4 md:py-12;
     @apply mx-auto w-[92%] max-w-[1000px] md:py-12;
   }
 

@@ -39,7 +39,6 @@ function HeroDev({
             />
           </picture>
         )}
-        s
       </div>
       <div
         className={cn(
@@ -70,7 +69,11 @@ function HeroDev({
               {stegaClean(title)}
             </h1>
           )}
-          {content && <PortableText value={content} />}
+          {content && (
+            <div className="richtext">
+              <PortableText value={content} />
+            </div>
+          )}
           {ctas && <CTAList ctas={ctas} className="!mt-4" />}
         </div>
         <Link

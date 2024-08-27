@@ -20,8 +20,7 @@ const singletonTypes = ["site"];
 
 export default defineConfig({
   name: "default",
-  title: "SanityPress",
-
+  title: "Sanity Studio",
   projectId,
   dataset: "production",
   basePath: "/admin",

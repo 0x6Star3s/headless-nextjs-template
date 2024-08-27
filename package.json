@@ -2,6 +2,12 @@
   "name": "s",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Paweł Stach",
+    "email": "pawel.stach81@gmail.com"
+  },
+  "description": "Website integration with Sanity CMS",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

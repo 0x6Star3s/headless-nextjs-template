@@ -15,7 +15,7 @@
 }
 
 .action-outline {
-  @apply _btn frosted-glass text-balance rounded border border-ink/10 bg-gradient-to-br from-canvas/70 to-canvas text-ink hover:border-ink/15 hover:opacity-80;
+  @apply _btn frosted-glass text-balance rounded-lg border border-ink/10 bg-gradient-to-br from-canvas/70 to-canvas text-ink hover:border-ink/15 hover:opacity-80;
 }
 
 .ghost {

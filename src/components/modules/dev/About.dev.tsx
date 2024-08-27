@@ -24,7 +24,6 @@ function AboutDev({
       layoutVariant: "left" | "right";
     };
   }>) {
-  console.log(layout);
   return (
     <section
       id={uid(props)}

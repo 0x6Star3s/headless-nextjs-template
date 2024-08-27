@@ -112,6 +112,35 @@
     }
   }
 
+  /* scrollLink */
+
+  .scrollLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 1.2em;
+    font-size: 22px;
+    color: rgba(#fff, 0.5);
+    border-radius: 2em;
+    border: solid 2px #898989;
+    transition: 0.4s;
+
+    &:hover {
+      border: solid 2px #ffffff;
+      color: #fff;
+    }
+
+    &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      border-radius: 50%;
+      animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+  }
+
   /* animations */
 
   @keyframes anim-fade-to {
@@ -145,5 +174,19 @@
 
   .anim-fade-to-b {
     --y: -1rem;
+  }
+  @keyframes scroll-icon {
+    0% {
+      transform: translateY(-12px);
+      opacity: 0;
+    }
+    30%,
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(12px);
+      opacity: 0;
+    }
   }
 }

@@ -1,13 +1,10 @@
 import Link from "next/link";
-// import { Button } from "@nextui-org/react";
-// import NextImage from "@/components/ui/image";
 import Img, { Source } from "@/components/ui/Img";
 import { PortableText } from "@portabletext/react";
 import CTAList from "@/components/ui/CTAList";
 import { stegaClean } from "@sanity/client/stega";
 import { cn } from "@/lib/utils";
 import { uid } from "@/lib/uid";
-// import { images } from "@/constants";
 
 function HeroDev({
   title,
@@ -27,16 +24,10 @@ function HeroDev({
     bgImageMobile: Sanity.Image;
     textAlign?: React.CSSProperties["textAlign"];
     alignItems?: React.CSSProperties["alignItems"];
-    // props: any;
   }>) {
   return (
     <section id={uid(props)} className="relative h-screen">
       <div className="absolute top-0 bottom-0 left-0 right-0 z-0">
-        {/* <NextImage
-          className="h-screen"
-          src={images.headerbg}
-          alt="header image | diak-bud - Name"
-        /> */}
         {bgImage?.asset && (
           <picture>
             <Source image={bgImageMobile} imageWidth={1200} />
@@ -52,11 +43,11 @@ function HeroDev({
       </div>
       <div
         className={cn(
-          "absolute flex z-10 bg-heroDevGradient h-full w-full items-center justify-between pb-5",
+          "absolute flex flex-col z-10 bg-heroDevGradient h-full w-full items-center  pb-5",
           {
-            "items-start": stegaClean(alignItems) === "start",
-            "items-center": stegaClean(alignItems) === "center",
-            "items-end": stegaClean(alignItems) === "end",
+            "justify-start": stegaClean(alignItems) === "start",
+            "justify-between": stegaClean(alignItems) === "center",
+            "justify-end": stegaClean(alignItems) === "end",
           }
         )}
       >
@@ -74,11 +65,13 @@ function HeroDev({
             }
           )}
         >
-          <h1 className="text-[2rem] md:text-[3rem] uppercase font-bold leading-snug">
-            {title}
-          </h1>
-          <PortableText value={content} />
-          <CTAList ctas={ctas} className="!mt-4" />
+          {title && (
+            <h1 className="text-[2rem] md:text-[3rem] uppercase font-bold leading-snug">
+              {stegaClean(title)}
+            </h1>
+          )}
+          {content && <PortableText value={content} />}
+          {ctas && <CTAList ctas={ctas} className="!mt-4" />}
         </div>
         <Link
           href="#about"

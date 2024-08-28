@@ -3,6 +3,10 @@
 @layer components {
   /* typography */
 
+  .hidden-scroll {
+    overflow: hidden;
+  }
+
   ._h {
     font-weight: bold;
   }

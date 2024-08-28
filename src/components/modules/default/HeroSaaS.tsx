@@ -17,7 +17,6 @@ export default function HeroSaaS({
     faded?: boolean;
   };
 }>) {
-  console.log("ctas", ctas);
   return (
     <section className="section space-y-8 text-center">
       <div className="richtext mx-auto max-w-2xl text-balance">

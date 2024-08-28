@@ -151,7 +151,6 @@ export default function CreativeModule({
                     );
 
                   case "custom-code":
-					console.log(subModule)
                     return <CustomHTMLSubmodule module={subModule} />;
 
                   case "icon":

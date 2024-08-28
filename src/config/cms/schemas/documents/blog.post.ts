@@ -26,7 +26,7 @@ export default defineType({
       type: "slug",
       options: {
         maxLength: 96,
-        source: (doc: any) => `/blog/${doc.title}`,
+        source: (doc: any) => `${doc.title}`,
         isUnique: (value, context) => context.defaultIsUnique(value, context),
         slugify: (input) => slugGeneration(input),
       },

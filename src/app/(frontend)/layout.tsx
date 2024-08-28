@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import Header from "@/ui/header";
+import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
 import VisualEditingControls from "@/components/VisualEditingControls";
@@ -17,7 +17,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="bg-canvas text-ink">
-        {/* <Header /> */}
+        <Header />
         <main id="main-content" tabIndex={-1}>
           {children}
         </main>

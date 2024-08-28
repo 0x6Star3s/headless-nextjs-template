@@ -1,5 +1,5 @@
 import { getSite } from '@/lib/sanity/queries'
-import CTA from '@/ui/CTA'
+import CTA from '@/components/ui/CTA'
 import LinkList from './LinkList'
 
 export default async function Menu() {

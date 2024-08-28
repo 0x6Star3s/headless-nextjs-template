@@ -20,6 +20,10 @@
     animation: target 2s ease-in-out forwards;
   }
 
+  :target {
+    scroll-margin-top: 60px;
+  }
+
   @keyframes target {
     0%,
     50% {

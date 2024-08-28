@@ -30,7 +30,7 @@ export default function ImageZoomSwiper({
     null
   );
   const temp =
-    "fixed top-0 left-0 p-[2rem] md:p-[4rem] h-screen w-[100%] z-[900] ";
+    "fixed top-0 left-0 p-[2rem] md:p-[4rem] h-screen w-[100%] z-[1000] ";
 
   return (
     <div className={model ? `${temp}` : cn(temp, "hidden")}>

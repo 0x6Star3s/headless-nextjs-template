@@ -35,7 +35,7 @@ function GalleryDev({
   return (
     <section
       id={uid(props)}
-      className="flex flex-wrap justify-center space-x-10 py-[5rem] px-5 bg-[#f3f5f9]"
+      className="flex flex-wrap justify-center space-x-10 py-[5rem] bg-[#f3f5f9]"
     >
       <div className="section">
         {pretitle && (

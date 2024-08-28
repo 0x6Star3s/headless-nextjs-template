@@ -11,12 +11,12 @@ export default async function Footer() {
   const logoImage = logo?.image?.light || logo?.image?.default;
 
   return (
-    <footer className="bg-ink text-center text-canvas">
-      <div className="section border-b border-canvas/20">
+    <footer className="bg-[#333] text-center text-canvas">
+      <div className="section border-b border-canvas/20 py-4">
         <div className="mx-auto max-w-screen-xl space-y-8">
           <div className="flex flex-wrap justify-between gap-x-12 gap-y-8">
             <div className="flex flex-col gap-3 self-start max-sm:mx-auto max-sm:items-center">
-              <Link className="h3 md:h2 max-w-max" href="/">
+              <Link className="md:h2 max-w-max" href="/">
                 {logoImage ? (
                   <Img
                     className="max-h-[1.5em] w-auto"

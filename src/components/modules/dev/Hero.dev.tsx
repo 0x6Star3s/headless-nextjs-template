@@ -32,9 +32,9 @@ function HeroDev({
           <picture>
             <Source image={bgImageMobile} imageWidth={1200} />
             <Img
-              className="size-full max-h-fold object-cover"
+              className="size-full object-cover"
               image={bgImage}
-              imageWidth={1800}
+              imageWidth={1920}
               draggable={false}
             />
           </picture>

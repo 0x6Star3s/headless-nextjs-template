@@ -10,6 +10,7 @@ const config: Config = {
         ink: "#000",
         canvas: "#fff",
         accent: "#0070F0",
+        // headerBgColor: "rgba(27, 34, 81, 0.568",
       },
       fontFamily: {},
       maxHeight: {
@@ -18,6 +19,13 @@ const config: Config = {
       backgroundImage: {
         heroDevGradient:
           "radial-gradient(48.79% 136.07% at 50.03% 48.54%,rgba(27, 34, 81, 0.568) 0, rgba(9, 19, 72, 0.677) 100%)",
+      },
+      backgroundColor: {
+        headerBgColor: "rgba(27, 34, 81, 0.568)",
+
+      },
+      boxShadow: {
+        "header-open": "0 0 10px 0 rgba(0, 0, 0, 0.1)",
       },
     },
   },

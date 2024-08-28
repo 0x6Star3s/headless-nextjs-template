@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import Header from "@/ui/header";
-// import Footer from "@/ui/footer";
+import Footer from "@/components/layout/footer";
 
 import VisualEditingControls from "@/components/VisualEditingControls";
 import "@/styles/app.scss";
@@ -21,7 +21,7 @@ export default async function RootLayout({
         <main id="main-content" tabIndex={-1}>
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
         <VisualEditingControls />
       </body>
     </html>

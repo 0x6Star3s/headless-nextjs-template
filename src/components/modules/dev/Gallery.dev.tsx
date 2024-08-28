@@ -48,7 +48,7 @@ function GalleryDev({
         {title && (
           <h2 className="text-[#11181c] text-4xl font-bold mt-3">{title}</h2>
         )}
-        {(imagesGroupArray?.length as any) >= 1 && (
+        {(imagesGroupArray?.length as number) >= 1 && (
           <div className="columns-1 md:columns-2 lg:columns-3 space-y-5 mt-5">
             {imagesGroupArray?.map((item, index) => (
               <div

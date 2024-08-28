@@ -1,0 +1,64 @@
+.swiper-button-prev,
+.swiper-button-next {
+  top: 0 !important;
+  height: 100% !important;
+  margin-top: 0 !important;
+  transition: all 0.3s;
+  color: #ffffff !important;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #0000005a;
+  }
+}
+
+.swiper-button-next {
+  right: 0 !important;
+  padding-left: 6rem;
+  padding-right: 2rem;
+}
+.swiper-button-prev {
+  left: 0 !important;
+  padding-left: 2rem;
+  padding-right: 6rem;
+}
+
+.swiper-slide {
+  width: auto;
+  background-size: cover;
+  background-position: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mainSwiper {
+  max-width: 1200px;
+  height: 85%;
+  @apply z-10;
+}
+
+.miniSwiper {
+  margin: 10px;
+  height: 15%;
+  max-width: 1200px;
+  width: 100%;
+  @apply z-10 cursor-pointer;
+
+  .swiper-slide {
+    min-width: 100px;
+    width: 15%;
+    max-width: 140px;
+    height: min-content;
+    border-radius: 4px;
+    overflow: hidden;
+    opacity: 0.4;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+}

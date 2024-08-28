@@ -37,7 +37,7 @@ function GalleryDev({
       id={uid(props)}
       className="flex flex-wrap justify-center space-x-10 py-[5rem] px-5 bg-[#f3f5f9]"
     >
-      <div className="max-w-[1000px] w-[90%] mx-auto">
+      <div className="section">
         {pretitle && (
           <span>
             <h3 className="text-[#130a4f] font-medium uppercase">{pretitle}</h3>

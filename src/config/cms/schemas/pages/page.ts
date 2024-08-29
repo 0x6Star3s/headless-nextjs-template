@@ -47,7 +47,7 @@ export default defineConfig({
         "The address of the page on the website, which will be easy to find in the internet.",
       type: "slug",
       options: {
-        source: (doc: any) => doc.metadata.title || doc.name || doc.title,
+        source: (doc: any) => doc.title,
         maxLength: 200, // will be ignored if slugify is set
       },
       group: "seo",

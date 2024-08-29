@@ -1,7 +1,7 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { VscSymbolKeyword } from "react-icons/vsc";
 import imageBlock from "../../../fragments/image-block";
-import { getBlockText } from "../../../../structure/utils";
+import { getBlockText } from "../../../../src/utils";
 
 export default defineType({
   name: "richtext-module",

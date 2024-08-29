@@ -1,6 +1,6 @@
 import { defineArrayMember, defineField, defineType } from 'sanity'
 import { VscListOrdered } from 'react-icons/vsc'
-import { getBlockText } from '../../../../structure/utils'
+import { getBlockText } from '../../../../src/utils'
 
 export default defineType({
 	name: 'step-list',

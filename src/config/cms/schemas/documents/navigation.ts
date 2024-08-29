@@ -1,6 +1,6 @@
 import { defineField, defineType } from "sanity";
 import { VscSymbolClass } from "react-icons/vsc";
-import { count } from "../../structure/utils";
+import { count } from "../../src/utils";
 
 export default defineType({
   name: "navigation",

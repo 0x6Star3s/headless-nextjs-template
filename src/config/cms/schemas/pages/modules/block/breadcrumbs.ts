@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity'
 import { BsBarChartSteps } from 'react-icons/bs'
-import { count } from '../../../../structure/utils'
+import { count } from '../../../../src/utils'
 export default defineType({
 	name: 'breadcrumbs',
 	title: 'Breadcrumbs',

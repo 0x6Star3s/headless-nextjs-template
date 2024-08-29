@@ -1,8 +1,4 @@
-// "use client"
-import { useState } from "react";
 import { defineType } from "sanity";
-import { Box, Button, Flex, Text, TextInput } from "@sanity/ui";
-import { VscCheck, VscCopy } from "react-icons/vsc";
 import Uid from "../../components/Uid";
 
 export default defineType({

@@ -2,7 +2,6 @@ import { defineArrayMember, defineConfig, defineField } from "sanity";
 
 import { SearchIcon, ComposeIcon } from "@sanity/icons";
 import { filterModules, modules } from "./componentsList";
-import { slugGeneration } from "../../lib/slug";
 
 console.log("modules", [
   ...filterModules("modules").map((section) => section.type.name),
@@ -48,9 +47,8 @@ export default defineConfig({
         "The address of the page on the website, which will be easy to find in the internet.",
       type: "slug",
       options: {
-        source: (doc: any) => `${doc.title}`,
+        source: (doc: any) => doc.metadata.title || doc.name || doc.title,
         maxLength: 200, // will be ignored if slugify is set
-        slugify: (input) => slugGeneration(input),
       },
       group: "seo",
     }),

@@ -59,7 +59,6 @@ export async function GET() {
 				components: {
 					types: {
 						image: ({ value }) => {
-							console.log(value)
 							const img = `<img src="${urlFor(value).url()}" alt="${value.alt}" />`
 							const figcaption =
 								value.caption && `<figcaption>${value.caption}</figcaption>`

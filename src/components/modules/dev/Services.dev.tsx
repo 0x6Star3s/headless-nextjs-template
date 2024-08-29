@@ -18,7 +18,6 @@ function ServicesDev({
       content: any;
     }[];
   }>) {
-  console.log(servicesGroup);
 
   return (
     <section id={uid(props)} className="my-[5rem]">

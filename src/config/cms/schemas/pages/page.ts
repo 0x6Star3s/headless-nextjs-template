@@ -3,10 +3,6 @@ import { defineArrayMember, defineConfig, defineField } from "sanity";
 import { SearchIcon, ComposeIcon } from "@sanity/icons";
 import { filterModules, modules } from "./componentsList";
 
-console.log("modules", [
-  ...filterModules("modules").map((section) => section.type.name),
-]);
-
 export default defineConfig({
   name: "page",
   title: "Pages",

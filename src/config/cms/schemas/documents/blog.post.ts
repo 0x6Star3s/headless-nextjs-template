@@ -1,7 +1,6 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { VscEdit } from "react-icons/vsc";
 import imageBlock from "../fragments/image-block";
-import { slugGeneration } from "../../lib/slug";
 
 export default defineType({
   name: "blog.post",
@@ -22,13 +21,15 @@ export default defineType({
     defineField({
       name: "slug",
       title: "Slug",
-      description:"Generated slug tu be used in the URL",
+      description: "Generated slug tu be used in the URL",
       type: "slug",
       options: {
         maxLength: 96,
-        source: (doc: any) => `${doc.title}`,
+
+        source: (doc: any) => doc.metadata.title || doc.name || doc.title,
+
         isUnique: (value, context) => context.defaultIsUnique(value, context),
-        slugify: (input) => slugGeneration(input),
+        // slugify: (input) => slugGeneration(input),
       },
       validation: (rule) => rule.required(),
       group: "seo",

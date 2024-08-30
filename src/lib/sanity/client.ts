@@ -6,7 +6,7 @@ export default createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: !dev,
+  useCdn: false,
   stega: {
     enabled: false,
     studioUrl,

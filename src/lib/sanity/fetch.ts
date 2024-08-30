@@ -15,7 +15,7 @@ export function fetchSanity<T = any>(
     params?: QueryParams;
   } & QueryOptions["next"] = {}
 ) {
-  const preview = dev || draftMode().isEnabled;
+  const preview = draftMode().isEnabled;
 
   return client.fetch<T>(
     query,
@@ -34,10 +34,10 @@ export function fetchSanity<T = any>(
       : {
           perspective: "published",
           useCdn: true,
-          // next: {
-          // 	revalidate: 3600, // every hour
-          // 	...next,
-          // },
+          next: {
+            revalidate: 3600, // every hour
+            ...next,
+          },
         }
   );
 }

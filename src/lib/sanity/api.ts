@@ -1,4 +1,3 @@
-export const useCdn = false;
 
 /**
  * As this file is reused in several other files, try to keep it lean and small.

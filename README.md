@@ -12,7 +12,7 @@ Visit [demo](https://headless-nextjs-template.vercel.app/)
 - [x]  [Pre-built frontend components](https://github.com/0x6Star3s/headless-nextjs-template/tree/main/src/components) for rapid website development.
 - [x] ✏️ Visual editing right inside the Embedded Sanity Studio.
 - [x] 📜 Auto-generated Table of Contents component based on headings.
-- [x] ⌨️ Auto-generated blog rss.xml
+- [x] ⌨️ Auto-generated sitemap.xml and blog rss.xml.
 
 
 ## Tech Stack

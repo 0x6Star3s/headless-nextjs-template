@@ -6,7 +6,6 @@ import client from "@/lib/sanity/client";
 import { urlFor } from "@/lib/sanity/urlFor";
 import { stegaClean } from "@sanity/client/stega";
 import Image from "next/image";
-import { urlForImage } from "@/config/cms/lib/sanity.image";
 
 const SIZES = [
   120, 160, 200, 240, 320, 400, 480, 520, 560, 600, 640, 800, 960, 1280, 1440,

@@ -2,7 +2,6 @@ import client from "@/lib/sanity/client";
 import dev from "@/lib/env";
 import { draftMode } from "next/headers";
 import type { QueryParams, QueryOptions } from "next-sanity";
-import { readToken } from "./api";
 
 export { default as groq } from "groq";
 
@@ -15,7 +14,7 @@ export function fetchSanity<T = any>(
     params?: QueryParams;
   } & QueryOptions["next"] = {}
 ) {
-  const preview = draftMode().isEnabled;
+  const preview = dev || draftMode().isEnabled;
 
   return client.fetch<T>(
     query,
@@ -25,7 +24,7 @@ export function fetchSanity<T = any>(
           stega: true,
           perspective: "previewDrafts",
           useCdn: false,
-          token: readToken,
+          token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
           next: {
             revalidate: 0,
             ...next,

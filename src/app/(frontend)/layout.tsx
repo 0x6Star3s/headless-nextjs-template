@@ -4,6 +4,7 @@ import Footer from "@/components/layout/footer";
 
 import VisualEditingControls from "@/components/VisualEditingControls";
 import "@/styles/app.scss";
+import SkipToContent from "@/components/ui/SkipToContent";
 
 // export const metadata: Metadata = {
 
@@ -17,6 +18,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="bg-canvas text-ink">
+        <SkipToContent />
         <Header />
         <main id="main-content" tabIndex={-1}>
           {children}

@@ -26,7 +26,7 @@ function HeroDev({
     alignItems?: React.CSSProperties["alignItems"];
   }>) {
   return (
-    <section id={uid(props)} className="relative h-screen">
+    <section id={uid(props)} className="relative h-screen-hero">
       <div className="absolute top-0 bottom-0 left-0 right-0 z-0">
         {bgImage?.asset && (
           <picture>

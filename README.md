@@ -20,50 +20,31 @@ Visit [demo](https://headless-nextjs-template.vercel.app/)
 
 Next.js 14 (App Router, RSC, Typescript), Tailwind CSS and scss
 
-
-## Add modules
-
-
-
+### Add modules
+  
 https://github.com/user-attachments/assets/6de55c95-cc89-4210-a43d-01d97c59d387
 
-
-
-## Changing the position of a section
-
-
+### Changing the position of a section
 
 https://github.com/user-attachments/assets/24877048-de91-40d6-bfd6-346763b45ea1
 
-
-## Demo of Creative module
-
-
+### Demo of Creative module
 
 https://github.com/user-attachments/assets/9c422bc9-b859-4f40-92ce-8c639adec509
 
-
-## Review changes
-
+### Review changes
 
 https://github.com/user-attachments/assets/92ca7e95-cb31-4584-80ff-fa357d592ee1
 
-
-
-## Different versions of the button (cta)
-
+### Different versions of the button (cta)
 
 https://github.com/user-attachments/assets/9266f51b-f62c-480b-b42a-120f0eb09a58
 
-
-## How quickly you can change the content on the page
-
+### How quickly you can change the content on the page
 
 https://github.com/user-attachments/assets/270b5298-2a59-420b-97e2-ae28b90c73c1
 
-
-## How to add any photo from unsplash
-
+### How to add any photo from unsplash
 
 https://github.com/user-attachments/assets/a348ab15-8660-41a7-a95b-f1306b948cc1
 

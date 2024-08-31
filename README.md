@@ -48,3 +48,38 @@ https://github.com/user-attachments/assets/270b5298-2a59-420b-97e2-ae28b90c73c1
 
 https://github.com/user-attachments/assets/a348ab15-8660-41a7-a95b-f1306b948cc1
 
+## Getting Started
+
+Clone or fork the template from [the GitHub template](https://github.com/0x6Star3s/headless-nextjs-template).
+
+### 2. Get a new Sanity project ID
+
+From the [Sanity.io Manage](https://sanity.io/manage) dashboard, create a new project _from scratch (blank schema) with CLI_.
+
+### 3. Update environment variables
+
+```sh
+# .env.local
+NEXT_PUBLIC_BASE_URL = ... # http://localhost:3000
+NEXT_PUBLIC_SANITY_PROJECT_ID = ... # abcdefgh
+NEXT_PUBLIC_SANITY_TOKEN = ... # retrieve from https://sanity.io/manage
+
+NEXT_PUBLIC_SANITY_DATASET= ... # production
+NEXT_PUBLIC_SANITY_API_VERSION= ... # 2024-07-01
+```
+
+### 4. Populate the Studio with your content
+
+Open your new Sanity Studio (`‌https://localhost:3000/admin`) and publish the following documents:
+
+1. a **Page** document with slug: `index` to use as the _Home_ page.
+
+For websites with a blog, additionally publish the following documents:
+
+2. a **Page** document with slug: `blog` to use as the _Blog listing_ page.
+3. a **Page** document with slug: `blog/*` to use as the _Blog post_ template page.
+
+### Optionally, you can publish the following documents:
+
+- a **Page** document with slug: `404` to use as the _Page not found_ page.
+
